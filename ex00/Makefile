@@ -1,11 +1,11 @@
-NAME := 
+NAME := animal
 
 CC := c++
 CFLAGS := -Wall -Wextra -Werror -std=c++98
 
 HEADER := includes/
 
-SOURCES := 
+SOURCES := main.cpp Animal.cpp Cat.cpp Dog.cpp
 
 SRC_DIR := sources/
 SRC := $(addprefix $(SRC_DIR), $(SOURCES))
