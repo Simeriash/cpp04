@@ -6,7 +6,7 @@
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 16:17:28 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/09 16:50:30 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/09 16:59:27 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 #include <string>
 
+#define GREEN "\033[32m"
+#define RED "\033[31m"
 #define B_CYAN "\033[96m"
 #define RESET "\033[39m"
 
