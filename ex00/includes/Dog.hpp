@@ -6,7 +6,7 @@
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 16:36:07 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/09 17:17:18 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/09 17:42:11 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Dog : public Animal
 	public:
 		Dog(void);
 		Dog(Dog const &cpy);
-		~Dog(void);
+		virtual ~Dog(void);
 		Dog &operator=(Dog const &other);
 
 		void makeSound(void) const;
