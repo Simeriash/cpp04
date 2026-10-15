@@ -6,7 +6,7 @@
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 16:52:24 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/09 17:25:19 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/15 09:22:48 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,5 @@ Cat &Cat::operator=(Cat const &other)
 void Cat::makeSound(void) const
 {
 	std::cout << B_MAGENTA "Miaaaouu." RESET << std::endl;
+	return;
 }
