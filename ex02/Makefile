@@ -5,7 +5,7 @@ CFLAGS := -Wall -Wextra -Werror -std=c++98
 
 HEADER := includes/
 
-SOURCES := main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
+SOURCES := main.cpp AAnimal.cpp Cat.cpp Dog.cpp Brain.cpp
 
 SRC_DIR := sources/
 SRC := $(addprefix $(SRC_DIR), $(SOURCES))

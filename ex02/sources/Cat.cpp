@@ -6,14 +6,14 @@
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 16:52:24 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/15 11:04:21 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/15 12:20:45 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/Cat.hpp"
 #include <iostream>
 
-Cat::Cat(void) : Animal()
+Cat::Cat(void) : AAnimal()
 {
 	_type = "Cat";
 	_brain = new Brain();
@@ -22,7 +22,7 @@ Cat::Cat(void) : Animal()
 	return;
 }
 
-Cat::Cat(Cat const &cpy) : Animal(cpy)
+Cat::Cat(Cat const &cpy) : AAnimal(cpy)
 {
 	_brain = new Brain(*cpy._brain);
 	std::cout << GREEN "Cat copy was created." RESET << std::endl;
@@ -40,7 +40,7 @@ Cat &Cat::operator=(Cat const &other)
 {
 	if(this != &other)
 	{
-		Animal::operator=(other);
+		AAnimal::operator=(other);
 		delete _brain;
 		_brain = new Brain(*other._brain);
 	}
