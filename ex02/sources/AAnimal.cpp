@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   AAnimal.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 16:39:29 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/09 17:05:54 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/15 12:24:58 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/Animal.hpp"
+#include "../includes/AAnimal.hpp"
 #include <iostream>
 #include <string>
 
-Animal::Animal(void) : _type("Animal")
+AAnimal::AAnimal(void) : _type("Animal")
 {
 	std::cout << GREEN "Animal was created." RESET << std::endl;
 	return;
 }
 
-Animal::Animal(Animal const &cpy)
+AAnimal::AAnimal(AAnimal const &cpy)
 {
 	*this = cpy;
 
@@ -28,13 +28,13 @@ Animal::Animal(Animal const &cpy)
 	return;
 }
 
-Animal::~Animal(void)
+AAnimal::~AAnimal(void)
 {
 	std::cout << RED "Animal was destructed." RESET << std::endl;
 	return;
 }
 
-Animal &Animal::operator=(Animal const &other)
+AAnimal &AAnimal::operator=(AAnimal const &other)
 {
 	if(this != &other)
 		_type = other._type;
@@ -42,13 +42,7 @@ Animal &Animal::operator=(Animal const &other)
 	return (*this);
 }
 
-void Animal::makeSound(void) const
-{
-	std::cout << B_CYAN << _type << " make some noise." RESET << std::endl;
-	return;
-}
-
-std::string Animal::getType(void) const
+std::string AAnimal::getType(void) const
 {
 	return (_type);
 }

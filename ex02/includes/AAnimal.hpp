@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   AAnimal.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 16:17:28 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/09 17:41:08 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/15 12:24:08 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-#define ANIMAL_HPP
+#ifndef AANIMAL_HPP
+#define AANIMAL_HPP
 
 #include <string>
 
 #define GREEN "\033[32m"
 #define RED "\033[31m"
-#define B_CYAN "\033[96m"
 #define RESET "\033[39m"
 
-class Animal
+class AAnimal
 {
 	public:
-		Animal(void);
-		Animal(Animal const &cpy);
-		virtual ~Animal(void);
-		Animal &operator=(Animal const &other);
+		AAnimal(void);
+		AAnimal(AAnimal const &cpy);
+		virtual ~AAnimal(void);
+		AAnimal &operator=(AAnimal const &other);
 
-		virtual void makeSound(void) const;
+		virtual void makeSound(void) const = 0;
 		std::string getType(void) const;
 
 	protected:
