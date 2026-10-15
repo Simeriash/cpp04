@@ -6,7 +6,7 @@
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 16:33:02 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/15 08:34:31 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/15 10:49:50 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define CAT_HPP
 
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 #define GREEN "\033[32m"
 #define RED "\033[31m"
@@ -29,6 +30,9 @@ class Cat : public Animal
 		Cat &operator=(Cat const &other);
 
 		void makeSound(void) const;
+
+	private:
+		Brain *_brain;
 };
 
 #endif

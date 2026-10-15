@@ -6,7 +6,7 @@
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 16:36:07 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/15 08:34:36 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/15 10:48:52 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define DOG_HPP
 
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 #define GREEN "\033[32m"
 #define RED "\033[31m"
@@ -29,6 +30,9 @@ class Dog : public Animal
 		Dog &operator=(Dog const &other);
 
 		void makeSound(void) const;
+
+	private:
+		Brain *_brain;
 };
 
 #endif
