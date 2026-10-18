@@ -6,7 +6,7 @@
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/09 17:32:59 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/15 11:32:41 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/18 16:15:45 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 int main(void)
 {
-	const Animal *dog = new Dog();
-	const Animal *cat = new Cat();
+	Animal *dog = new Dog();
+	Animal *cat = new Cat();
 	Dog an_other_dog;
 	Dog an_other_other_dog = Dog(an_other_dog);
 
