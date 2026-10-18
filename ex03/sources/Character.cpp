@@ -14,7 +14,7 @@ Character::Character(Character const &cpy) : _name(cpy._name)
 	for(int i = 0; i < 4; i++)
 	{
 		if(cpy._inventory[i])
-			_inventory[i] = cpy._inventory[i];
+			_inventory[i] = cpy._inventory[i]->clone();
 		else
 			_inventory[i] = NULL;
 	}
@@ -39,7 +39,7 @@ Character &Character::operator=(Character const &other)
 
 		for(int i = 0; i < 4; i++)
 		{
-			if(other._inventory[i])
+			if(_inventory[i])
 				delete _inventory[i];
 		}
 
