@@ -5,7 +5,7 @@ CFLAGS := -Wall -Wextra -Werror -std=c++98
 
 HEADER := includes/
 
-SOURCES := main.cpp AMateria.cpp Cure.cpp Ice.cpp ICharacter.cpp IMateriaSource.cpp
+SOURCES := main.cpp AMateria.cpp Cure.cpp Ice.cpp Character.cpp MateriaSource.cpp
 
 SRC_DIR := sources/
 SRC := $(addprefix $(SRC_DIR), $(SOURCES))
