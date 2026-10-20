@@ -6,7 +6,7 @@
 /*   By: julauren <julauren@student.42angouleme.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 08:41:27 by julauren          #+#    #+#             */
-/*   Updated: 2026/10/15 09:17:16 by julauren         ###   ########.fr       */
+/*   Updated: 2026/10/20 14:24:17 by julauren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class WrongAnimal
 	public:
 		WrongAnimal(void);
 		WrongAnimal(WrongAnimal const &cpy);
-		virtual ~WrongAnimal(void);
+		~WrongAnimal(void);
 		WrongAnimal &operator=(WrongAnimal const &other);
 
 		void makeSound(void) const;
